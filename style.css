@@ -1,0 +1,249 @@
+/* Write some CSS below */
+
+.wholepage{
+    background-color: rgb(240, 240, 240);
+}
+
+.headinglogo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    border-radius: 180%;
+    width: 5%;
+    border: 5px solid rgb(215, 192, 37);
+    justify-content: left;
+    margin: 1%;
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+.headinglogotext{
+    display: flex;
+    justify-content: flex-end;
+    gap: 5%;
+    margin: 1%;
+    text-wrap: nowrap;
+}
+
+.headingmenu{
+    display: flex;
+    grid-gap: 5%;
+    justify-content: flex-start;
+    margin: 1%;
+}
+
+.banner {
+    background-image: radial-gradient(circle, rgba(2,0,36,0.6) 0%, rgba(9,9,121,0.5) 35%, rgba(0,212,255,0) 100%), url(images/header_image.png);
+    height: 50vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1 {
+    color: rgb(254, 237, 174);
+    font-size: 40px;
+    margin: 1%;
+    line-height: 2;
+    font-weight: bold;
+    }
+    h3 {
+        color: rgb(249, 218, 105);
+        margin: 0;
+        line-height: 2;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 26px;
+    }
+    a {
+        color: rgb(3, 3, 70);
+        background-color: rgb(249, 218, 105);
+        padding: 10px;
+        border-radius: 5px;
+        text-decoration: none;
+        margin: 1%;
+        line-height: 1;
+        font-weight: bold;
+    }
+}
+
+
+
+.cardssection{
+    margin: 3%;
+    h2{
+        font-size: 32px;
+    }
+}
+
+.only4cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 18px;
+    a{
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+    h5{
+        text-align: justify;
+        line-height: normal;
+    }
+}
+
+.only4cards img {
+    width: 100%;
+    height: 50%;
+}
+
+.card1spring{
+    box-shadow: 7px 17px 27px grey;
+    a, h5{
+        margin-inline: 5%;
+    }
+}
+.card2summer{
+    box-shadow: 7px 17px 27px grey;
+    a, h5{
+        margin-inline: 5%;
+    }
+}
+.card3autumn{
+    box-shadow: 7px 17px 27px grey;
+    a, h5{
+        margin-inline: 5%;
+    }
+}
+.card4winter{
+    box-shadow: 7px 17px 27px grey;
+    a, h5{
+        margin-inline: 5%;
+    }
+}
+
+
+@media (max-width: 960px) {
+    /* For a screen < 960px, this CSS will be read */
+    .cardssection {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1rem;
+    }
+    .only4cards{
+        width: 100%;
+      }
+    .banner{
+        height: 40vh;
+    }
+  }
+  @media (max-width: 720px) {
+    /* For a screen < 720px, this CSS will be read */
+    .only4cards {
+        grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .only4cards{
+        width: 100%;
+      }
+   .banner{
+    height: 20vh;
+   }
+  }
+  @media (max-width: 540px) {
+    /* For a screen < 540px, this CSS will be read */
+    .cardssection {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    .only4cards{
+        width: 100%;
+      }
+    .banner{
+        height: 40vh;
+    }
+  }
+
+
+
+.footer{
+    background-color: rgb(5, 0, 100);
+    h4{
+    color: rgb(254, 237, 174);
+    line-height: 2;
+    }
+    h5{
+        color: rgb(254, 237, 174);
+        text-decoration: underline;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    h6{
+        color: rgb(254, 237, 174);
+        font-size: 12px;
+    }
+    a{
+        color: rgb(254, 237, 174);
+        text-decoration: none;
+        font-size: 12px;
+         
+    }
+}
+
+.footernameandslogan{
+    font-size: 24px;
+    font-style: italic;
+}
+
+.footertext{
+    margin: 1%;
+}
+
+.cardsfooter{
+    justify-content:space-around;
+    display: flex;
+    
+}
